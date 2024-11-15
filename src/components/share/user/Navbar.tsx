@@ -1,8 +1,10 @@
 'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import React, { useEffect, useState } from 'react'
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -19,9 +21,9 @@ const Navbar = () => {
         Toggle Dark Mode
       </button>
           <div className="flex space-x-2">
-          <Link href={'/dashboard'} ><span className='px-2 py-1 border'>Dashboard</span></Link>
-          <Link href={'/'} ><span className='px-2 py-1 border'>User</span></Link>
-          <Link href={'/contactus'} ><span className='px-2 py-1 border'>Contact Us</span></Link>
+          <Link href={'/dashboard'} className={`link ${pathname === '/dashboard' ? 'active bg-platinum text-black ' : ''}`} ><span className='px-2 py-1 border'>Dashboard</span></Link>
+          <Link href={'/'} className={`link ${pathname === '/' ? 'active bg-platinum text-black ' : ''}`} ><span className='px-2 py-1 border'>User</span></Link>
+          <Link href={'/contactus'} className={`link ${pathname === '/contactus' ? 'active bg-platinum text-black ' : ''}`} ><span className='px-2 py-1 border'>Contact Us</span></Link>
           </div>
       </div>
     </div>
