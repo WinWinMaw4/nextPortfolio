@@ -21,6 +21,11 @@ const items = [
         icon: Home,
     },
     {
+        title: "Post",
+        url: "/dashboard/posts",
+        icon: Home,
+    },
+    {
         title: "Inbox",
         url: "#",
         icon: Inbox,
