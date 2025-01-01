@@ -1,3 +1,4 @@
+import UserProfile2 from '@/components/share/user/UserProfile2'
 import React from 'react'
 
 const ContactUs = () => {
@@ -11,6 +12,7 @@ const ContactUs = () => {
         <div className="p-5 bg-platinum ">platinum</div>
 
       </div>
+      <UserProfile2 />
     </div>
   )
 }

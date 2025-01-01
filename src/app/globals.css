@@ -18,7 +18,7 @@ body {
     --foreground: 240 10% 3.9%;
   }
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 330 4% 11% 1%;
     --foreground: 0 0% 98%;
   }
 }
